@@ -10,6 +10,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Read from './components/read';
+import Create from './components/create';
 
 
 function App() {
@@ -41,9 +43,9 @@ function App() {
           {/* Route for the home page, rendering the Content component */}
           <Route path='/' element={<Content></Content>}></Route>
           {/* Route for the read page, rendering the Header component */}
-          <Route path='/read' element={<Header></Header>}></Route>
+          <Route path='/read' element={<Read/>}></Route>
           {/* Route for the create page, rendering the Footer component */}
-          <Route path='/create' element={<Footer></Footer>}></Route>
+          <Route path='/create' element={<Create/>}></Route>
         </Routes>
 
 
